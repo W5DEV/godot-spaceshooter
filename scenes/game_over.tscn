@@ -1,0 +1,77 @@
+[gd_scene load_steps=5 format=3 uid="uid://obhp6jedefnp"]
+
+[ext_resource type="Script" path="res://scenes/game_over.gd" id="1_ebw2h"]
+[ext_resource type="FontFile" uid="uid://cmfm0qgcxvouq" path="res://graphics/font/subatomic.tsoonami.ttf" id="1_ymwiw"]
+[ext_resource type="PackedScene" uid="uid://dnip3as7r0ehc" path="res://scenes/level.tscn" id="2_su6ar"]
+[ext_resource type="AudioStream" uid="uid://boy1lml1e28ts" path="res://audio/title_music.wav" id="4_rsgat"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ebw2h")
+level_scene = ExtResource("2_su6ar")
+
+[node name="BG" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.227451, 0.180392, 0.247059, 1)
+metadata/_edit_lock_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="GameOver" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ymwiw")
+theme_override_font_sizes/font_size = 120
+text = "Game Over
+"
+horizontal_alignment = 1
+
+[node name="Score" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ymwiw")
+theme_override_font_sizes/font_size = 50
+text = "Score:
+"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.5
+offset_top = -43.0
+offset_right = 100.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 20
+
+[node name="StartAgain" type="Label" parent="MarginContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ymwiw")
+theme_override_font_sizes/font_size = 40
+text = "Press Space to Start Again"
+horizontal_alignment = 1
+
+[node name="TitleMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_rsgat")

@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dl8t403bf0ukk"]
+
+[ext_resource type="Texture2D" uid="uid://bbbhej0k8yjsu" path="res://graphics/ship/playerShip1_red.png" id="1_4eers"]
+[ext_resource type="Script" path="res://scenes/player.gd" id="1_ibqdo"]
+[ext_resource type="AudioStream" uid="uid://8bbvmvh6lik0" path="res://audio/laser.wav" id="3_px0i0"]
+[ext_resource type="AudioStream" uid="uid://bgu76ysx82j2w" path="res://audio/damage.ogg" id="4_4ina4"]
+
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 6
+script = ExtResource("1_ibqdo")
+
+[node name="LaserTimer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="PlayerImage" type="Sprite2D" parent="."]
+texture = ExtResource("1_4eers")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-8, -38, 8, -38, 8, -38, 12, -12, 35, 2, 47, -6, 47, 22, 14, 27, 8, 37, -7, 37, -15, 27, -43, 23, -47, -5, -36, 2, -13, -11)
+
+[node name="LaserStartPos" type="Marker2D" parent="."]
+position = Vector2(0, -53)
+
+[node name="LaserSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_px0i0")
+
+[node name="DamageSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_4ina4")
+
+[connection signal="timeout" from="LaserTimer" to="." method="_on_laser_timer_timeout"]

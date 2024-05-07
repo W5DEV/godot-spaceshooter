@@ -1,0 +1,759 @@
+[gd_scene load_steps=57 format=3 uid="uid://dnip3as7r0ehc"]
+
+[ext_resource type="Texture2D" uid="uid://dit3ylvhlqjtq" path="res://graphics/other/bg.png" id="1_ca4w1"]
+[ext_resource type="Script" path="res://scenes/level.gd" id="1_x6p1k"]
+[ext_resource type="PackedScene" uid="uid://dl8t403bf0ukk" path="res://scenes/player.tscn" id="2_ksmxk"]
+[ext_resource type="Texture2D" uid="uid://c43kstqgijach" path="res://graphics/star/00000.png" id="3_yfx71"]
+[ext_resource type="Texture2D" uid="uid://dkgdkf5al4m05" path="res://graphics/star/00001.png" id="4_63wu8"]
+[ext_resource type="Texture2D" uid="uid://cs0gybu0i3ug8" path="res://graphics/star/00002.png" id="5_0e02n"]
+[ext_resource type="Texture2D" uid="uid://dx0c55djrfdf" path="res://graphics/star/00003.png" id="6_jkpbu"]
+[ext_resource type="Texture2D" uid="uid://cg8wm5wc561b2" path="res://graphics/star/00004.png" id="7_20oef"]
+[ext_resource type="Texture2D" uid="uid://c2n1jsgmph8u3" path="res://graphics/star/00005.png" id="8_xg2sq"]
+[ext_resource type="Texture2D" uid="uid://3s6vb8exq11u" path="res://graphics/star/00006.png" id="9_71g8e"]
+[ext_resource type="Texture2D" uid="uid://dqd5ddfvhxylh" path="res://graphics/star/00007.png" id="10_lcpol"]
+[ext_resource type="Texture2D" uid="uid://cci2p0my2nxx2" path="res://graphics/star/00008.png" id="11_vwsh5"]
+[ext_resource type="Texture2D" uid="uid://c1mti6mdp2gnd" path="res://graphics/star/00009.png" id="12_8w2aj"]
+[ext_resource type="Texture2D" uid="uid://bfsarmoa4ylfk" path="res://graphics/star/00010.png" id="13_v2dkk"]
+[ext_resource type="Texture2D" uid="uid://oo4f8t2eou7v" path="res://graphics/star/00011.png" id="14_5762r"]
+[ext_resource type="Texture2D" uid="uid://3ewuuiv6c4w6" path="res://graphics/star/00012.png" id="15_s2i8t"]
+[ext_resource type="Texture2D" uid="uid://ih70376i45k5" path="res://graphics/star/00013.png" id="16_plawk"]
+[ext_resource type="Texture2D" uid="uid://dgysa8lqo8wdr" path="res://graphics/star/00014.png" id="17_4o05k"]
+[ext_resource type="Texture2D" uid="uid://dc41gsugon0y2" path="res://graphics/star/00015.png" id="18_dkm02"]
+[ext_resource type="Texture2D" uid="uid://c0kajccboj1hk" path="res://graphics/star/00016.png" id="19_plmv5"]
+[ext_resource type="Texture2D" uid="uid://bllronesd8vut" path="res://graphics/star/00017.png" id="20_3nss2"]
+[ext_resource type="Texture2D" uid="uid://xiva6k8a42j5" path="res://graphics/star/00018.png" id="21_lrlth"]
+[ext_resource type="Texture2D" uid="uid://dep0d3by1403u" path="res://graphics/star/00019.png" id="22_n70b1"]
+[ext_resource type="Texture2D" uid="uid://dkx5d2y0ya56" path="res://graphics/star/00020.png" id="23_6lk14"]
+[ext_resource type="Texture2D" uid="uid://bwxqt3px0x77e" path="res://graphics/star/00021.png" id="24_mn517"]
+[ext_resource type="Texture2D" uid="uid://d2imyg0qsreiu" path="res://graphics/star/00022.png" id="25_hj66b"]
+[ext_resource type="Texture2D" uid="uid://dbewq1of2slav" path="res://graphics/star/00023.png" id="26_yjd5j"]
+[ext_resource type="Texture2D" uid="uid://cct8hpcpnnfdq" path="res://graphics/star/00024.png" id="27_rmbsr"]
+[ext_resource type="Texture2D" uid="uid://cipkcvb751m1c" path="res://graphics/star/00025.png" id="28_20d80"]
+[ext_resource type="Texture2D" uid="uid://d2cqqs6yi6vqv" path="res://graphics/star/00026.png" id="29_12g3l"]
+[ext_resource type="Texture2D" uid="uid://d1vysn5srni64" path="res://graphics/star/00027.png" id="30_wo2pn"]
+[ext_resource type="Texture2D" uid="uid://c5txht4jq7q7d" path="res://graphics/star/00028.png" id="31_wfyr2"]
+[ext_resource type="Texture2D" uid="uid://cvq61j7svoohm" path="res://graphics/star/00029.png" id="32_2x2td"]
+[ext_resource type="Texture2D" uid="uid://dbmua8dgkccdm" path="res://graphics/star/00030.png" id="33_exdy6"]
+[ext_resource type="Texture2D" uid="uid://b3ockj12p2by5" path="res://graphics/star/00031.png" id="34_kd46g"]
+[ext_resource type="Texture2D" uid="uid://80t1bvfk40pi" path="res://graphics/star/00032.png" id="35_rsiux"]
+[ext_resource type="Texture2D" uid="uid://b7hc465wo7cwq" path="res://graphics/star/00033.png" id="36_aypbt"]
+[ext_resource type="Texture2D" uid="uid://b6dmabvdj4xkq" path="res://graphics/star/00034.png" id="37_rcrd1"]
+[ext_resource type="Texture2D" uid="uid://c38y18dw5ha17" path="res://graphics/star/00035.png" id="38_hp3ti"]
+[ext_resource type="Texture2D" uid="uid://cwey2him4wff0" path="res://graphics/star/00036.png" id="39_3thrt"]
+[ext_resource type="Texture2D" uid="uid://b8eerlbu8jwx5" path="res://graphics/star/00037.png" id="40_gkqlp"]
+[ext_resource type="Texture2D" uid="uid://c01kc0hnbn6gg" path="res://graphics/star/00038.png" id="41_i2o82"]
+[ext_resource type="Texture2D" uid="uid://coruxwa4qxk8y" path="res://graphics/star/00039.png" id="42_icupv"]
+[ext_resource type="Texture2D" uid="uid://vokmmh7gm7s6" path="res://graphics/star/00040.png" id="43_mx8bu"]
+[ext_resource type="Texture2D" uid="uid://bhxkyy0x54tqq" path="res://graphics/star/00041.png" id="44_0pkor"]
+[ext_resource type="Texture2D" uid="uid://bny44ilypfatl" path="res://graphics/star/00042.png" id="45_7bn0u"]
+[ext_resource type="Texture2D" uid="uid://f01lsqrc234" path="res://graphics/star/00043.png" id="46_7e7on"]
+[ext_resource type="Texture2D" uid="uid://frhinf442y64" path="res://graphics/star/00044.png" id="47_c0dlp"]
+[ext_resource type="Texture2D" uid="uid://dmydm4sexepxt" path="res://graphics/star/00045.png" id="48_0nj2d"]
+[ext_resource type="Texture2D" uid="uid://blymke135g5rw" path="res://graphics/star/00046.png" id="49_80xs0"]
+[ext_resource type="Texture2D" uid="uid://ba0sve8np8q6b" path="res://graphics/star/00047.png" id="50_nytrg"]
+[ext_resource type="PackedScene" uid="uid://hf8t6fxvwryd" path="res://scenes/ui.tscn" id="52_r3mwm"]
+[ext_resource type="AudioStream" uid="uid://bvviwatjqo8h6" path="res://audio/game_music.wav" id="54_po5st"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r1ait"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_yfx71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_63wu8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0e02n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_jkpbu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_20oef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xg2sq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_71g8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_lcpol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_vwsh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_8w2aj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_v2dkk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_5762r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_s2i8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_plawk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_4o05k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_dkm02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_plmv5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_3nss2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_lrlth")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_n70b1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_6lk14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_mn517")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_hj66b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_yjd5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_rmbsr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_20d80")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_12g3l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_wo2pn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_wfyr2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_2x2td")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_exdy6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_kd46g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_rsiux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_aypbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_rcrd1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_hp3ti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_3thrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_gkqlp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_i2o82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_icupv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_mx8bu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_0pkor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_7bn0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_7e7on")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_c0dlp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_0nj2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_80xs0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_nytrg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qt5e0"]
+size = Vector2(120, 1152)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rbhbw"]
+size = Vector2(1989.5, 128)
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_x6p1k")
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(933, 547)
+scale = Vector2(1.70781, 1.71389)
+texture = ExtResource("1_ca4w1")
+metadata/_edit_lock_ = true
+
+[node name="Stars" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D9" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D10" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D11" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D12" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D13" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D14" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D15" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D16" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D17" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D18" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D19" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D20" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D21" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D22" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D23" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D24" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D25" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D26" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D27" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D28" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D29" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D30" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D31" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D32" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D33" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D34" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D35" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D36" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D37" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D38" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D39" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D40" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D41" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D42" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D43" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D44" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D45" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D46" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D47" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D48" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D49" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D50" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D51" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D52" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D53" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D54" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D55" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D56" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D57" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D58" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D59" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D60" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D61" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D62" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D63" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D64" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D65" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D66" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D67" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D68" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D69" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D70" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D71" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D72" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D73" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D74" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D75" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D76" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D77" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D78" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D79" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="AnimatedSprite2D80" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_r1ait")
+autoplay = "default"
+frame = 9
+frame_progress = 0.916219
+
+[node name="Player" parent="." instance=ExtResource("2_ksmxk")]
+position = Vector2(954, 961)
+
+[node name="Borders" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Borders"]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D"]
+position = Vector2(1977, 536)
+shape = SubResource("RectangleShape2D_qt5e0")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Borders"]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D2"]
+position = Vector2(-61, 529)
+shape = SubResource("RectangleShape2D_qt5e0")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Borders"]
+position = Vector2(501, 109)
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D3"]
+position = Vector2(464, -174)
+shape = SubResource("RectangleShape2D_rbhbw")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Borders"]
+position = Vector2(501, 109)
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D4"]
+position = Vector2(458, 1032)
+shape = SubResource("RectangleShape2D_rbhbw")
+
+[node name="MeteorTimer" type="Timer" parent="."]
+wait_time = 0.2
+autostart = true
+
+[node name="Meteors" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="Lasers" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="UI" parent="." instance=ExtResource("52_r3mwm")]
+
+[node name="GameMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("54_po5st")
+
+[connection signal="laser" from="Player" to="." method="_on_player_laser"]
+[connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]
